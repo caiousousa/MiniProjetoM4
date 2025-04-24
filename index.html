@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas (API Fake)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="senhaGerada" placeholder="Senha Gerada" readonly>
+        <div class="slider-container">
+            <input type="range" id="tamanhoSenha" min="8" max="30" value="15">
+            <span id="valorTamanho">15</span>
+        </div>
+        <label><input type="checkbox" id="maiusculas"> Letra maiúscula</label><br>
+        <label><input type="checkbox" id="minusculas" checked> Letra minúscula</label><br>
+        <label><input type="checkbox" id="numeros"> Números</label><br>
+        <label><input type="checkbox" id="simbolos"> Símbolos</label><br>
+        <button id="gerarSenha">Gerar código</button>
+        <button id="copiarSenha">Copiar senha</button>
+       
+        <hr>
+      
+        <button id="btnTodas">Ver todas as senhas</button>
+        <button id="btnUltima">Ver última senha</button>
+        <button id="btnAleatoria">Ver senha aleatória</button>
+        <pre id="respostaApi" style="background:#eee; padding:10px; margin-top:10px;"></pre>
+        
+
+
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
