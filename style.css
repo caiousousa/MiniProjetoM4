@@ -29,6 +29,7 @@ input[type="text"] {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    color: #221f1f;
 }
 
 input[type="range"] {
@@ -38,7 +39,7 @@ input[type="range"] {
 .slider-container span {
     margin-left: 10px;
     font-size: 14px;
-    color: #555;
+  
 }
 
 label {
@@ -47,7 +48,7 @@ label {
 }
 
 button {
-    background-color: #dc3545;
+    background-color: #590F7D;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -58,7 +59,7 @@ button {
 }
 
 button:hover {
-    background-color: #c82333;
+    background-color: #1547cf;
 }
 
 h2 {
@@ -81,3 +82,4 @@ h2 {
 #listaSenhas li:last-child {
     border-bottom: none;
 }
+

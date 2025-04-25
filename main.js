@@ -24,8 +24,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnTodas.addEventListener('click', async () => {
         const dados = await getSenhas();
-        respostaApi.textContent = JSON.stringify(dados, null, 2);
+        if (dados.length === 0) {
+            respostaApi.innerHTML = '<em>Nenhuma senha gerada ainda.</em>';
+            return;
+        }
+    
+        respostaApi.innerHTML = `<strong>Todas as senhas:</strong><br><br>` +
+            dados
+                .sort((a, b) => new Date(b.data) - new Date(a.data))
+                .map(s => `• ${s.senha} <br><strong>Gerada em: ${s.data}</strong>`)
+                .join('<br><br>');
+    
+        document.getElementById('listaSenhas').style.display = 'none'; // Oculta a lista, se estiver usando
     });
+    
 
     btnUltima.addEventListener('click', async () => {
         const dados = await getUltimaSenha();
