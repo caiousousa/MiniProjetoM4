@@ -34,5 +34,3 @@ https://mockapi.io/projects/6807fea7942707d722dd0b45
 - CSS3
 - JavaScript (ES6)
 - MockAPI
-
-ATENÇÃO: O projeto ainda não foi finalizado e está em fase apenas de estudo, 
